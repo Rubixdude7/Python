@@ -2,7 +2,7 @@ import sys
 class Matrix:
 
 	def __init__(self,*args):
-		self.matrix = args
+		self.matrix = list(args)
 		
 	def get(self, i = 0, j = 0):
 		return self.matrix[i][j]
@@ -14,6 +14,8 @@ class Matrix:
 		return len(self.matrix)
 		
 	def min(self):
+		if(self.size() == 0):
+			return (0, 0, None)
 		a = 0
 		b = 0
 		min = sys.maxsize
@@ -24,6 +26,10 @@ class Matrix:
 					a = i
 					b = j
 		return (a, b, min)
+		
+	def addRow(self,row):
+		self.matrix.append(row)
+	
 		
 	def __str__(self):
 		string = ""
