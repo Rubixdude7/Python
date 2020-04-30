@@ -2,7 +2,15 @@
 #Nolan Aubuchon
 #Dijkstra's Algorithm
 
-#Note: the leftmost entry of the matrix is the starting position. The furthest right is the goal
+'''
+Still needs work, but nonetheless is a proof of concept
+Note: the leftmost entry of the matrix is the starting position. The furthest right is the goal
+
+With the given graph.txt file the output is:
+minimum cost: 8
+
+0 -> 4 -> 5 -> 6 -> 7
+'''
 from Matrix import Matrix
 from pathstring import pathstring
 matrix = Matrix()
