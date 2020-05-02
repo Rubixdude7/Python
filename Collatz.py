@@ -1,3 +1,10 @@
+#Python 3
+#Nolan Aubuchon
+'''
+Tests the Collatz Conjecture
+Writes the output to 'collatz.txt'
+'''
+
 def printCollatz(num = 1):
 	if(num == 1):
 		return "1"
@@ -11,4 +18,4 @@ for i in range(1,1000):
         file.write(str(printCollatz(i)) + "\n")
         
 file.close()
-
+#end
